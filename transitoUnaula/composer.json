@@ -1,0 +1,22 @@
+{
+    "name": "dsc/transito-unaula",
+    "description": "Proyecto transito Unaula",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controller\\": "./controllers",
+            "Model\\": "./models",
+            "Clases\\" : "./clases"
+        }
+    },
+    "authors": [
+        {
+            "name": "Teo2214",
+            "email": "mateo.botero3812@unaula.edu.co"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

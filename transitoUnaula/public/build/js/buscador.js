@@ -1,0 +1,1 @@
+function iniciarApp(){buscarPlaca()}function buscarPlaca(){document.querySelector("#placa").addEventListener("input",(function(n){const t=n.target.value;6===t.length&&(window.location=`?placa=${t}`)}))}document.addEventListener("DOMContentLoaded",(function(){iniciarApp()}));

@@ -1,0 +1,47 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.listado-servicios{
+    display: grid;
+    gap: 2rem;
+    @include m.tablet{
+        @include m.grid(2, 2rem);
+    }
+
+    .tipoMultas{
+        background-color: v.$blanco;
+        padding: 3rem;
+        border-radius: 1rem;
+        transition: transform;
+        transition-duration: 300ms;
+        text-align: center;
+        @include m.tablet{
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
+
+        &.seleccionado{
+            background-color: v.$secundario;
+            p{
+                color: v.$blanco;
+            }
+        }
+        
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        p{
+            color: v.$negro;
+            
+        }
+        .precio-multa{
+            color: v.$secundario;
+            font-weight: v.$bold;
+            font-size: 3rem;
+        }
+    }
+
+    
+}
